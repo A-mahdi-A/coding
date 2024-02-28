@@ -1,0 +1,11 @@
+// @import './styles/satartPage.scss';
+body {
+  display: none;
+  
+}
+
+@media only screen and (max-width: 500px) {
+    body {
+        display: block;
+    }
+}

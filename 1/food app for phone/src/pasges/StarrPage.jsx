@@ -18,7 +18,8 @@ function StartPage() {
             {/* ============================= */}
             <section id='button'>
                 <div><Link to='/login'>Get starteed</Link></div>
-                </section>        </div>
+
+            </section>        </div>
     );
 }
 export default StartPage;

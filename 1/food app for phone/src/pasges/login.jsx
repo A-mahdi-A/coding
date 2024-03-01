@@ -5,11 +5,11 @@ import { Link } from "react-router-dom";
 function pageLogin() {
     return (
         <div id="parent">
-            <section>
+            <section id="top">
                 <div id="p-imge"><img src={Logo} alt="logo web site" /></div>
                 <div id="p-login-sinUP">
                     <button id="login"><Link to='/login'>Login</Link></button>
-                    <button id="sign-up"><Link to='/'>sign-up</Link></button>
+                    <button id="sign-up"><Link to='/sign-Up'>sign-up</Link></button>
                 </div>
             </section>
             {/* ---------------------------------------------- */}
@@ -23,7 +23,10 @@ function pageLogin() {
                     <input type="Password" id="Passwords" required />
                 </div>
             </section>
-            <section id="Forgot"> <div id="Forgot"><Link to='#'>Forgot passcode?</Link></div>     </section>
+            {/* ----------------------------- */}
+            <section id="Forgot"> <div><Link >Forgot passcode?</Link></div>     </section>
+            {/* ---=-=--=-=-==----==---==-=-=-=-=- */}
+            <section id="buttonL"><button><Link>Login</Link></button></section>
         </div>
     );
 }

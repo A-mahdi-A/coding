@@ -1,0 +1,314 @@
+{
+	"info": {
+		"_postman_id": "6eeca847-2367-4709-80e2-59db16bf522b",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "7976968"
+	},
+	"item": [
+		{
+			"name": "sign-up",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"\",\r\n    \"password\":\"\",\r\n    \"fullName\":\"\",\r\n    \"mobile\":\"\",\r\n    \"address\":\"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/sign-up",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"sign-up"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "sign-in",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"mkhajavi5@gmail.com\",\r\n    \"password\":\"123456\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/sign-in",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"sign-in"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get profile user",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "auth",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTg4OGE0NGI5MjZiMzk5MDAyOWYzY2IiLCJlbWFpbCI6Im1raGFqYXZpNUBnbWFpbC5jb20iLCJtb2JpbGUiOiIwOTIyNjMzNDkyNyIsImlhdCI6MTcwMzUyODMzNiwiZXhwIjoxNzAzNTMxOTM2fQ.iI9pXdtYArw6pgbtBpK5td7AO3iSK1Z572_ZEB1jlJ4",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create menu",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "auth",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTg4OGE0NGI5MjZiMzk5MDAyOWYzY2IiLCJlbWFpbCI6Im1raGFqYXZpNUBnbWFpbC5jb20iLCJtb2JpbGUiOiIwOTIyNjMzNDkyNyIsImlhdCI6MTcwMzUyODMzNiwiZXhwIjoxNzAzNTMxOTM2fQ.iI9pXdtYArw6pgbtBpK5td7AO3iSK1Z572_ZEB1jlJ4",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"kabab\",\r\n    \"type\":\"foods\",\r\n    \"price\":\"150000\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/menu",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"menu"
+					]
+				},
+				"description": "type only can be below items\r\n\r\n['foods','drinks','snacks','sauces','salads']"
+			},
+			"response": []
+		},
+		{
+			"name": "get menu according types",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "auth",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTg4OGE0NGI5MjZiMzk5MDAyOWYzY2IiLCJlbWFpbCI6Im1raGFqYXZpNUBnbWFpbC5jb20iLCJtb2JpbGUiOiIwOTIyNjMzNDkyNyIsImlhdCI6MTcwMzUyODMzNiwiZXhwIjoxNzAzNTMxOTM2fQ.iI9pXdtYArw6pgbtBpK5td7AO3iSK1Z572_ZEB1jlJ4",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/menu/?type=foods",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"menu",
+						""
+					],
+					"query": [
+						{
+							"key": "type",
+							"value": "foods"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "search menu with name",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "auth",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTg4OGE0NGI5MjZiMzk5MDAyOWYzY2IiLCJlbWFpbCI6Im1raGFqYXZpNUBnbWFpbC5jb20iLCJtb2JpbGUiOiIwOTIyNjMzNDkyNyIsImlhdCI6MTcwMzUyODMzNiwiZXhwIjoxNzAzNTMxOTM2fQ.iI9pXdtYArw6pgbtBpK5td7AO3iSK1Z572_ZEB1jlJ4",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/search/menu?name=kabab",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"search",
+						"menu"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "kabab"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "order",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "auth",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTg4OGE0NGI5MjZiMzk5MDAyOWYzY2IiLCJlbWFpbCI6Im1raGFqYXZpNUBnbWFpbC5jb20iLCJtb2JpbGUiOiIwOTIyNjMzNDkyNyIsImlhdCI6MTcwMzUyODMzNiwiZXhwIjoxNzAzNTMxOTM2fQ.iI9pXdtYArw6pgbtBpK5td7AO3iSK1Z572_ZEB1jlJ4",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"orderItems\": [\r\n    {\r\n      \"menuItemId\": \"6589c848361a6ac696b9c947\",\r\n      \"quantity\": 3\r\n    },\r\n    {\r\n      \"menuItemId\": \"6589c86f361a6ac696b9c94a\",\r\n      \"quantity\": 2\r\n    },\r\n    {\r\n      \"menuItemId\": \"6589c882361a6ac696b9c94d\",\r\n      \"quantity\": 4\r\n    }\r\n  ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/order",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"order"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get order by id",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "auth",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTg4OGE0NGI5MjZiMzk5MDAyOWYzY2IiLCJlbWFpbCI6Im1raGFqYXZpNUBnbWFpbC5jb20iLCJtb2JpbGUiOiIwOTIyNjMzNDkyNyIsImlhdCI6MTcwMzUyODMzNiwiZXhwIjoxNzAzNTMxOTM2fQ.iI9pXdtYArw6pgbtBpK5td7AO3iSK1Z572_ZEB1jlJ4",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/order/6589d07580f9826e241e9ecf",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"order",
+						"6589d07580f9826e241e9ecf"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get all my orders",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "auth",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTg4OGE0NGI5MjZiMzk5MDAyOWYzY2IiLCJlbWFpbCI6Im1raGFqYXZpNUBnbWFpbC5jb20iLCJtb2JpbGUiOiIwOTIyNjMzNDkyNyIsImlhdCI6MTcwMzUyODMzNiwiZXhwIjoxNzAzNTMxOTM2fQ.iI9pXdtYArw6pgbtBpK5td7AO3iSK1Z572_ZEB1jlJ4",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/orders",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"orders"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "change order status (fake payment)",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "auth",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTg4OGE0NGI5MjZiMzk5MDAyOWYzY2IiLCJlbWFpbCI6Im1raGFqYXZpNUBnbWFpbC5jb20iLCJtb2JpbGUiOiIwOTIyNjMzNDkyNyIsImlhdCI6MTcwMzUyODMzNiwiZXhwIjoxNzAzNTMxOTM2fQ.iI9pXdtYArw6pgbtBpK5td7AO3iSK1Z572_ZEB1jlJ4",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"newStatus\":\"confirmed\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/order/6589d07580f9826e241e9ecf",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"order",
+						"6589d07580f9826e241e9ecf"
+					]
+				},
+				"description": "all order status : \r\n['pending', 'confirmed', 'delivered'] "
+			},
+			"response": []
+		}
+	]
+}

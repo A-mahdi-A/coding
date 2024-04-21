@@ -1,8 +1,10 @@
 // @import './styles/satartPage.scss';
 // @import './styles/loginPage.scss';
+*{
+  box-sizing: border-box;
+}
 body {
   display: none;
-  
 }
 
 @media only screen and (max-width: 500px) {

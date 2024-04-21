@@ -1,0 +1,3 @@
+  cd f-d-a   
+  npm install
+  npm run dev

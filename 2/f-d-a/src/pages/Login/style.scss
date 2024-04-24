@@ -1,0 +1,68 @@
+body {
+  box-sizing: border-box;
+  padding: 0%;
+  margin: 0%;
+
+  section#logo-and-switch-form {
+    padding: 50px 0px 0px 0px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    img {
+      width: 132px;
+      margin-top: 55px;
+      margin-bottom: 80px;
+    }
+
+    div#Login {
+      border-bottom: 2px solid #FA4A0C;
+    }
+  }
+
+  section#form {
+    background-color: #F2F2F2;
+    ;
+    font-family: sans-serif;
+    padding: 10px 26px;
+
+    div.inputs {
+      padding-top: 50px;
+      input{
+        width: 350px;
+        border: none;
+        border-bottom: 0.5px solid #6c6c6c  ;
+        padding: 10px;
+        background-color:#F2F2F2 ;
+      }
+      h2{
+        font-weight: 600;
+        font-size: unset;
+        color: #6c6c6c;
+      }
+    }
+
+    div#forget {
+margin-top: 50px;
+      color: #FA4A0C;
+    }
+    section#btn-login{
+      display: flex;
+      justify-content: center;
+      margin-top: 105px;
+      a{
+        text-decoration: none;
+        button{
+          width:314px ;
+          height:70px ;
+          border: none;
+          border-radius: 30px;
+          background-color: #FA4A0C;
+          color: white;
+        }
+      }
+    }
+  }
+}

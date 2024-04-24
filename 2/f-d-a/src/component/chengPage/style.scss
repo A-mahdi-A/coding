@@ -1,0 +1,32 @@
+body {
+
+
+    section#cheng {
+        width: 400px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+
+        border-radius: 40px;
+
+        div {
+            width: 45%;
+            display: flex;
+            justify-content: center;
+            background-color: white;
+            font-family: sans-serif;
+            padding: 15px 0px;
+            font-size: 18px;
+
+            a {
+                text-decoration: none;
+                color: black;
+            }
+        }
+
+        div#Login {
+            margin-right: 10px;
+        }
+    }
+
+}

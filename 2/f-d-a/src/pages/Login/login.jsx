@@ -22,7 +22,7 @@ function Login() {
 
         <div id="forget">Forgot passcode?</div>
         <section id="btn-login">
-          <Link to='/'><button>LOGIN</button></Link>
+          <Link to='/Home'><button>LOGIN</button></Link>
         </section>
       </section>
     </>

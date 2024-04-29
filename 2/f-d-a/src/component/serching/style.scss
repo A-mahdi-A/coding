@@ -1,0 +1,23 @@
+body {
+    section#ser-sec {
+        display: flex;
+        align-items: center;
+        width: 333px;
+        height: 60px;
+        background-color: #EFEEEE;
+        border-radius: 30px;
+
+        div {
+            img{
+                margin: 0px 20px;
+            }
+            input {
+                padding: 10px;
+                background-color: #EFEEEE;
+                border: none;
+                height: 40px;
+
+            }
+        }
+    }
+}

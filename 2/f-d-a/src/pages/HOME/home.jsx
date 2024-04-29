@@ -14,9 +14,17 @@ function Home() {
         </h1>
       </section>
       {/* search */}
-      <section id="searchin">
+      <section id="serchin">
 
         <Search/>
+      </section>
+      {/* meno part */}
+      <section id="meno">
+        <div id="select"><a href="#">Foods</a></div>
+        <div><a href="#">Drinks</a></div>
+        <div><a href="#">Snacks</a></div>
+        <div><a href="#">Sauce</a></div>
+        <div><a href="#">wine</a></div>
       </section>
     </>
   );

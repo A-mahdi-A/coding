@@ -12,7 +12,7 @@ return(
         <div id="home"><Link><img src={HomeLogo}alt="" /></Link></div>
         <div id="Like"><Link><img src={LikeLogo}alt="" /></Link></div>
         <div id="Profile"><Link><img src={ProfileLogo} alt="" /></Link></div>
-        <div id="history"><Link><img src={historyLogo} alt="" /></Link></div>
+        <div id="history"><Link to='/history'><img src={historyLogo} alt="" /></Link></div>
     </section>
     </>
 );

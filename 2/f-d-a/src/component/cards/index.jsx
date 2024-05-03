@@ -1,6 +1,7 @@
+
 import React from "react";
 import "./style.scss";
-import FoodImage from "../../assets/image/Mask Group.svg";
+import FoodImage from "../../assets/image/food.svg";
 function Card() {
   return (
     <>

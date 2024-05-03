@@ -2,12 +2,13 @@ import React from "react";
 import './style.scss'
 import backBTN from '../../assets/image/backBTN.svg'
 import listCenter from '../../assets/image/Vector1.png'
+import { Link } from "react-router-dom";
 function Pagehistorys() {
     return (
         <>
             <section id="his">
                 <section id="hisHeader">
-                    <div><img src={backBTN} alt="" /></div>
+                    <div><Link to='/Home'><img src={backBTN} alt="" /></Link></div>
                     <div>History</div>
                     </section>
                 <section id="centerside">

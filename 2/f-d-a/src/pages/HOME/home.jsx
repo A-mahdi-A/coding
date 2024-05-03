@@ -3,6 +3,8 @@ import "./style.scss";
 import Header from "../../component/hedar";
 import Search from "../../component/serching";
 import Navbar from "../../component/navbar";
+import Card from "../../component/cards";
+
 function Home() {
   return (
     <>
@@ -26,6 +28,14 @@ function Home() {
         <div><a href="#">Snacks</a></div>
         <div><a href="#">Sauce</a></div>
         <div><a href="#">wine</a></div>
+      </section>
+      {/* cards sectione */}
+      <section id="card">
+    <div><Card/></div>
+    <div><Card/></div>
+    <div><Card/></div>
+    <div><Card/></div>
+    <div><Card/></div>
       </section>
       {/* Navbar */}
       <Navbar/>

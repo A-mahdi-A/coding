@@ -1,0 +1,33 @@
+body {
+    section#cardsParent {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 220px;
+        height: 260px;
+        margin-top: 50px;
+        background-color: white;
+border-radius: 30px;
+        div#im {
+            position: relative;
+            top: -10px;
+        left: 12px;
+        }
+        div{ 
+            display: flex;
+            align-items: center;
+            flex-direction: column; position: relative;
+            top: -50px;
+            h2{
+                
+   text-align:center;
+                margin: 0px;
+            }
+            p{
+                color:#FA4A0C;
+                ;
+            }
+        }
+    }
+}

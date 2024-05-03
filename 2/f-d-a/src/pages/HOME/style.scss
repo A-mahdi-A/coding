@@ -24,6 +24,7 @@ body {
 
     // ------------------------------------------------------------
     section#meno {
+        margin-top: 50px;
         padding-left: 50px;
         display: flex;
         overflow-x: auto;
@@ -51,5 +52,14 @@ height: 30px;
             }
         }
       
+    }
+    // -------------------------------------------------------------
+    section#card{
+        margin: 70px 30px 80px 30px;
+      display: flex;
+      overflow-y: auto;
+      div{
+        padding-right: 20px;
+      }
     }
 }

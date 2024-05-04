@@ -7,7 +7,7 @@ function Card() {
   return (
     <>
       <section id="cardsParent">
-        <Link>
+        <Link to='/InFood'>
           <div id="im">
             <img src={FoodImage} alt="" />
           </div>

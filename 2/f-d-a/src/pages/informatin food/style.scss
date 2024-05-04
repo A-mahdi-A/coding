@@ -3,4 +3,21 @@ body{
         display: flex;
         align-items: center;
     }
+    // ------------------------Sectione number 2 fod img and titele------------------------
+    section#imgAndName{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        div{
+            display: flex;
+            align-items:  center;
+            flex-direction: column;
+            p#Price{
+                margin: 0%;
+                color:#FA4A0C;
+                font-weight: 800;
+            }
+        }
+    }
 }

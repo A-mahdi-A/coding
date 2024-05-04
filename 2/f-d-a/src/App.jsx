@@ -6,6 +6,7 @@ import Home from "./pages/HOME/home"
 import Pagehistory from "./pages/Historys/historysPage"
 import Order from "./pages/orderPage/order"
 import InFood from "./pages/informatin food/InFood"
+import Profile from "./pages/profile/profile"
 function App() {
   
   return (
@@ -17,6 +18,7 @@ function App() {
       <Route path="/history" element={<Pagehistory/>}/>
       <Route path="/Order" element={<Order/>}/>
       <Route path="/InFood" element={<InFood/>}/>
+      <Route path="/profile" element={<Profile/>}/>
 
     
     </Routes>

@@ -28,7 +28,22 @@ function InFood() {
         </div>
       </section>
       {/* __________________________text__________________________________ */}
-      <section id="information"></section>
+      <section id="information">
+        <div>
+          {" "}
+          <h1>Delivery info</h1>
+          <p>
+            Delivered between monday aug and thursday 20 from 8pm to 91:32 pm
+          </p>
+        </div>
+        <div>
+          <h1>Return policy</h1>
+          <p>
+            All our foods are double checked before leaving our stores so by any
+            case you found a broken food please contact our hotline immediately.
+          </p>
+        </div>
+      </section>
       {/* --------------------------------button--------------------------- */}
       <section id="addToSabad"></section>
     </>

@@ -2,6 +2,7 @@ body{
     header#IN-header{
         display: flex;
         align-items: center;
+        padding: 50px 60px 40px 60px;
     }
     // ------------------------Sectione number 2 fod img and titele------------------------
     section#imgAndName{
@@ -49,13 +50,13 @@ body{
         justify-content: center;
         a{
             button{
-                width: 314px;
-                height: 50px;
+                width: 325px;
+                height: 70px;
                 background-color: #FA4A0C;
                 color: white;
                 border: none;font-size: 17px;
                 border-radius: 30px;
-                padding: 20px  0px 40px 0px;
+                
             }
         }
     }

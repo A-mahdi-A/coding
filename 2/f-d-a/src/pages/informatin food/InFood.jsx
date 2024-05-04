@@ -45,7 +45,9 @@ function InFood() {
         </div>
       </section>
       {/* --------------------------------button--------------------------- */}
-      <section id="addToSabad"></section>
+      <section id="addToSabad">
+     <Link><button>Add to cart</button></Link>
+      </section>
     </>
   );
 }

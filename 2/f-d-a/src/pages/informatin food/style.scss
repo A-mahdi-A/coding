@@ -43,4 +43,20 @@ body{
             }
         }
     }
+    // --------------------------------------------BTN---------------------------------------------------
+    section#addToSabad{
+        display: flex;
+        justify-content: center;
+        a{
+            button{
+                width: 314px;
+                height: 50px;
+                background-color: #FA4A0C;
+                color: white;
+                border: none;font-size: 17px;
+                border-radius: 30px;
+                padding: 20px  0px 40px 0px;
+            }
+        }
+    }
 }

@@ -1,5 +1,7 @@
 var a = 4;
 // if 
-if (a > 5) { 
-    console.log("2 bitger")    //work
+if (false) { 
+    console.log("a bitger")    //work
+}else{
+    console.log('smaler a')
 }
